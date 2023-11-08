@@ -1,6 +1,6 @@
-# Automower-Conect
+# Automower-Connect
 
-[![npm](https://badgen.net/npm/v/gardena-smart-system)](https://www.npmjs.com/package/gardena-smart-system)
+[![npm](https://badgen.net/npm/v/automower-connect)](https://www.npmjs.com/package/automower-connect)
 
 A nodejs package which allows communicating with the Automower Connect API.
 
