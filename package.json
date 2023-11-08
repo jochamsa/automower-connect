@@ -1,0 +1,47 @@
+{
+  "name": "automower-connect",
+  "version": "0.0.3",
+  "type": "module",
+  "description": "A nodejs package which allows communicating with the Automower Connect API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Sascha",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "node-fetch": "^3.3.2",
+    "tslib": "~2.6.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.5",
+    "@types/ws": "^8.5.5",
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "@typescript-eslint/parser": "6.4.0",
+    "eslint": "~8.47.0",
+    "eslint-config-prettier": "~9.0.0",
+    "prettier": "~3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m**.git"
+  },
+  "keywords": [
+	"husqvarna"
+    "automower",
+    "automower connect",
+    "lawnmower",
+    "smart system"
+  ],
+  "bugs": {
+    "url": "https://github.com/**/issues"
+  },
+  "homepage": "https://github.com/**x/node-gardena-smart-system#readme"
+}

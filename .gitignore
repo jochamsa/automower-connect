@@ -1,0 +1,6 @@
+node_modules
+**/src/jsontest.ts
+**/src/websocketTest.ts
+**/src/test.ts
+package-lock.json
+*.tgz
