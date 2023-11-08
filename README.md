@@ -42,7 +42,7 @@ await mower.activateRealtimeUpdates();
 ```javascript
 import AutoMowerConnection from 'automower-connect';
 
-const automower = new AutoMowerConnection({ aoiKey: 'YOUR_APP_KEY', clientSecret:'YOUR_APP_SECRET' });
+const automower = new AutoMowerConnection({ apiKey: 'YOUR_APP_KEY', clientSecret:'YOUR_APP_SECRET' });
 const mowers = await automower.getMowers();
 const mower = mowers[0];
 
