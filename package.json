@@ -5,7 +5,7 @@
   "description": "A nodejs package which allows communicating with the Automower Connect API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Sascha",
+  "author": "Sascha Jocham",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.29.4",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m**.git"
+    "url": "https://github.com/jochamsa/automower-connect.git"
   },
   "keywords": [
 	"husqvarna"
@@ -41,7 +41,7 @@
     "smart system"
   ],
   "bugs": {
-    "url": "https://github.com/**/issues"
+    "url": "https://github.com/jochamsa/automower-connect/issues"
   },
-  "homepage": "https://github.com/**x/node-gardena-smart-system#readme"
+  "homepage": "https://github.com/jochamsa/automower-connect#readme"
 }
