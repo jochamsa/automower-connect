@@ -142,7 +142,6 @@ export class AutoMowerConnection {
                 let json;
                 try {
                     json = JSON.parse(data.toString());
-                    console.log(`WsSocket: ${data.toString()}`);
                 }
                 catch (e) {
                     throw new AutoConnectApiError(`Received websocket message, but couldn't decode as JSON: ${data.toString()}`);
@@ -160,7 +159,7 @@ export class AutoMowerConnection {
                     });
                     var updateList = [];
                     if (matchedDevice) {
-                        updateList = matchedDevice.processWsAttributes(json.attributes);
+                        updateList = matchedDevice.processWsAttributes(json);
                         // Emit event with attributes
                         matchedDevice.emit('wsUpdate', updateList);
                     }

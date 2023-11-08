@@ -57,8 +57,6 @@ export class AutoMower extends EventEmitter {
     }
     processStateEvent(stateJson) {
         const updatedFields = [];
-        console.log(`newState: ${stateJson.mower.state}`);
-        console.log(`${stateJson.toString()}`);
         let newBatteryPercent = +stateJson.battery.batteryPercent;
         if (this.batteryPercent != newBatteryPercent) {
             this.data.battery.batteryPercent = newBatteryPercent;
@@ -107,7 +105,6 @@ export class AutoMower extends EventEmitter {
             this.overrideAction = newAction;
             updatedFields.push("overrideAction");
         }
-        console.log(`RReason: ${stateJson.planner.restrictedReason}`);
         let newRestrictedReason = RestrictedReason[stateJson.planner.restrictedReason];
         if (this.restrictedReason != newRestrictedReason) {
             this.data.planner.restrictedReason = newRestrictedReason;
@@ -174,7 +171,9 @@ export class AutoMower extends EventEmitter {
             };
             // Add minutes to body if provided
             if (minutes) {
-                body.data.attributes.duration = minutes;
+                body.data.attributes = {
+                    duration: minutes
+                };
             }
             // Add work area id to body if provided
             if (workAreaId) {
